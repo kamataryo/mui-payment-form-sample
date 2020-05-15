@@ -119,7 +119,12 @@ export default function Payment(props: Props) {
             />
           </Grid>
           <Grid item xs={6}>
-            <TextField {...cvvProps} label={"CVV"} fullWidth={true} />
+            <TextField
+              {...cvvProps}
+              label={"CVV"}
+              fullWidth={true}
+              type={"password"}
+            />
           </Grid>
           <Grid item xs={12}>
             <Button variant="contained" color="primary" type={"button"}>
